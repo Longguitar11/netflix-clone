@@ -5,7 +5,7 @@ import { authCheck, logout, signin, signup } from '../controllers/auth.controlle
 const router = express.Router();
 
 router.post('/signup', signup)
-router.get('login', signin)
+router.post('/signin', signin)
 router.post('/logout', logout)
 router.get('/authCheck', protectRoute, authCheck)
 
