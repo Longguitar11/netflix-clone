@@ -24,7 +24,6 @@ app.use('/api/v1/tv', protectRoute, tvRoute)
 app.use('/api/v1/search', protectRoute, searchRoute)
 
 if (NODE_ENV === 'production') {
-    console.log("Production mode");
     app.use(express.static(path.join(__dirname, 'frontend/dist')))
 
     app.get('*', (req, res) => {

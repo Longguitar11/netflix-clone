@@ -8,7 +8,7 @@ import { formatDate } from "../utils/dateFunction";
 
 const SearchHistoryPage = () => {
 	const [searchHistory, setSearchHistory] = useState([]);
-    console.log(searchHistory)
+	
 	useEffect(() => {
 		const getSearchHistory = async () => {
 			try {
