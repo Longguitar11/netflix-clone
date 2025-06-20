@@ -8,7 +8,6 @@ import movieRoute from './routes/movie.route.js';
 import tvRoute from './routes/tv.route.js';
 import searchRoute from './routes/search.route.js';
 import { protectRoute } from './middlewares/protectRoute.middleware.js';
-import { clear } from 'console';
 
 const app = express();
 
